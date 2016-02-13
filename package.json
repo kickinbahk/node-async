@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/kickinbahk/node-async/issues"
   },
-  "homepage": "https://github.com/kickinbahk/node-async#readme"
+  "homepage": "https://github.com/kickinbahk/node-async#readme",
+  "dependencies": {
+    "request": "^2.60.0"
+  }
 }
