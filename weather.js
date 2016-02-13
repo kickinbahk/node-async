@@ -5,7 +5,7 @@ module.exports = function (callback) {
 
     request({url: url, json: true}, function(err, response, body) {
         if (err) {
-            callback("Unable to fetch weather");
+            callback();
         } else {
             // console.log(JSON.stringify(body, null, 4));
             callback(`It is ${body.main.temp} degrees in ${body.name}`);

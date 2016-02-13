@@ -6,6 +6,10 @@ weather(function (currentWeather) {
 });
 
 location(function (location) {
+    if (!location) {
+        console.log(`Not able to get location`);
+        return;
+    }
     console.log(`city: ${location.city}`);
     console.log(`long/lat: ${location.loc}`);    
 });
